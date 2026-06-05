@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+College Logo
+</a>
+
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link active" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="dashboard.html">Dashboard</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="profile.html">Profile</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"
+href="#"
+role="button"
+data-bs-toggle="dropdown">
+Courses
+</a>
+
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#">B.Tech</a></li>
+<li><a class="dropdown-item" href="#">M.Tech</a></li>
+<li><a class="dropdown-item" href="#">MBA</a></li>
+</ul>
+
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contactus.html">Contact</a>
+</li>
+
+
+</ul>
+
+
+<a href="registration_form.html"><button class="btn btn-light ms-3"> Login</button></a>
+
+</div>
+</div>
+</nav>
+
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">
+        Student Profiles
+    </h2>
+
+    <div id="profileCarousel"
+         class="carousel slide"
+         data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <!-- Profile 1 -->
+            <div class="carousel-item active">
+
+                <div class="card mx-auto" style="width:350px;">
+
+                    <img src="D:\5w7\profile.png"
+                         class="card-img-top"
+                         alt="Student">
+
+                    <div class="card-body text-center">
+
+                        <h4>Rahul Kumar</h4>
+
+                        <p><strong>Roll No:</strong> 101</p>
+                        <p><strong>Branch:</strong> CSE</p>
+                        <p><strong>Email:</strong> rahul@gmail.com</p>
+                        <p><strong>Mobile:</strong> 9876543210</p>
+
+                        <button class="btn btn-primary">
+                            View Details
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Profile 2 -->
+            <div class="carousel-item">
+
+                <div class="card mx-auto" style="width:350px;">
+
+                    <img src="D:\5w7\p2.jpg"
+                         class="card-img-top"
+                         alt="Student">
+
+                    <div class="card-body text-center">
+
+                        <h4>Priya Sharma</h4>
+
+                        <p><strong>Roll No:</strong> 102</p>
+                        <p><strong>Branch:</strong> ECE</p>
+                        <p><strong>Email:</strong> priya@gmail.com</p>
+                        <p><strong>Mobile:</strong> 9876543211</p>
+
+                        <button class="btn btn-primary">
+                            View Details
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Profile 3 -->
+            <div class="carousel-item">
+
+                <div class="card mx-auto" style="width:350px;">
+
+                    <img src="D:\5w7\p3.jpg"
+                         class="card-img-top"
+                         alt="Student">
+
+                    <div class="card-body text-center">
+
+                        <h4>Arjun Reddy</h4>
+
+                        <p><strong>Roll No:</strong> 103</p>
+                        <p><strong>Branch:</strong> IT</p>
+                        <p><strong>Email:</strong> arjun@gmail.com</p>
+                        <p><strong>Mobile:</strong> 9876543212</p>
+
+                        <button class="btn btn-primary">
+                            View Details
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Previous Button -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#profileCarousel"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon bg-dark rounded"></span>
+
+        </button>
+
+        <!-- Next Button -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#profileCarousel"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon bg-dark rounded"></span>
+
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

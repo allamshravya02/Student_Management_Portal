@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<style>
+body{
+    background-color:#f8f9fa;
+}
+
+.form-container{
+    max-width:800px;
+    margin:auto;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+</style>
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+College Logo
+</a>
+
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link active" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="dashboard.html">Dashboard</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="profile.html">Profile</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"
+href="#"
+role="button"
+data-bs-toggle="dropdown">
+Courses
+</a>
+
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#">B.Tech</a></li>
+<li><a class="dropdown-item" href="#">M.Tech</a></li>
+<li><a class="dropdown-item" href="#">MBA</a></li>
+</ul>
+
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contactus.html">Contact</a>
+</li>
+
+
+</ul>
+
+
+<a href="registration_form.html"><button class="btn btn-light ms-3"> Login</button></a>
+
+</div>
+</div>
+</nav>
+
+<div class="container form-container py-5">
+
+<div class="card shadow">
+
+<div class="card-header bg-primary text-white text-center">
+<h2>Student Registration Form</h2>
+</div>
+
+<div class="card-body">
+
+<form class="needs-validation" novalidate>
+
+<!-- Full Name -->
+<div class="mb-3">
+<label class="form-label">Full Name</label>
+<input type="text" class="form-control" required>
+<div class="invalid-feedback">
+Please enter your name.
+</div>
+</div>
+
+<!-- Roll Number -->
+<div class="mb-3">
+<label class="form-label">Roll Number</label>
+<input type="text" class="form-control" required>
+<div class="invalid-feedback">
+Enter Roll Number.
+</div>
+</div>
+
+<!-- Email -->
+<div class="mb-3">
+<label class="form-label">Email</label>
+
+<div class="input-group">
+<span class="input-group-text">@</span>
+<input type="email" class="form-control" required>
+</div>
+
+<div class="invalid-feedback">
+Enter valid email.
+</div>
+</div>
+
+<!-- Mobile Number -->
+<div class="mb-3">
+<label class="form-label">Mobile Number</label>
+
+<div class="input-group">
+<span class="input-group-text">+91</span>
+<input type="tel"
+class="form-control"
+pattern="[0-9]{10}"
+required>
+</div>
+
+<div class="invalid-feedback">
+Enter 10 digit mobile number.
+</div>
+</div>
+
+<!-- Gender -->
+<div class="mb-3">
+<label class="form-label d-block">Gender</label>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input"
+type="radio"
+name="gender"
+required>
+<label class="form-check-label">Male</label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input"
+type="radio"
+name="gender">
+<label class="form-check-label">Female</label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input"
+type="radio"
+name="gender">
+<label class="form-check-label">Other</label>
+</div>
+
+</div>
+
+<!-- Branch -->
+<div class="mb-3">
+<label class="form-label">Branch</label>
+
+<select class="form-select" required>
+<option value="">Choose Branch</option>
+<option>CSE</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>IT</option>
+<option>CIVIL</option>
+<option>Mechanical</option>
+</select>
+
+<div class="invalid-feedback">
+Select Branch.
+</div>
+</div>
+
+<!-- DOB -->
+<div class="mb-3">
+<label class="form-label">Date of Birth</label>
+<input type="date" class="form-control" required>
+</div>
+
+<!-- Address -->
+<div class="mb-3">
+<label class="form-label">Address</label>
+<textarea class="form-control"
+rows="3"
+required></textarea>
+</div>
+
+<!-- Upload Photo -->
+<div class="mb-3">
+<label class="form-label">Upload Photo</label>
+<input type="file"
+class="form-control"
+accept="image/*"
+required>
+</div>
+
+<!-- Terms -->
+<div class="form-check mb-3">
+<input class="form-check-input"
+type="checkbox"
+required>
+
+<label class="form-check-label">
+I agree to Terms and Conditions
+</label>
+
+<div class="invalid-feedback">
+You must agree before submitting.
+</div>
+</div>
+
+<!-- Buttons -->
+<div class="text-center">
+
+<button class="btn btn-success"
+        data-bs-toggle="modal"
+        data-bs-target="#successModal">
+    Register
+</button>
+
+<div class="modal fade" id="successModal">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5>Registration Successful</h5>
+      </div>
+
+      <div class="modal-body">
+        Student registered successfully.
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary"
+                data-bs-dismiss="modal">
+            OK
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<button type="reset"
+class="btn btn-danger">
+Reset
+</button>
+
+</div>
+
+</form>
+
+</div>
+</div>
+
+</div>
+
+<script>
+(() => {
+'use strict';
+
+const forms =
+document.querySelectorAll('.needs-validation');
+
+Array.from(forms).forEach(form => {
+
+form.addEventListener('submit', event => {
+
+if (!form.checkValidity()) {
+
+event.preventDefault();
+event.stopPropagation();
+
+}
+
+form.classList.add('was-validated');
+
+}, false);
+
+});
+
+})();
+</script>
+
+</body>
+</html>
